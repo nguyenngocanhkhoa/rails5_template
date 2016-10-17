@@ -61,6 +61,12 @@ gem 'high_voltage', '~> 3.0.0'
 # nested layout, allow to smaller layout rather than only applicatin layout
 gem 'nestive'
 
+# image uploader, can use to upload file to local storage or AWS S3
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+
+# randomly generate avatar
+gem "avatarly"
+
 # background job
 # gem 'devise-async'
 

@@ -21,6 +21,7 @@
 #  confirmation_sent_at   :datetime
 #  unconfirmed_email      :string
 #  role                   :integer
+#  avatar                 :string
 #
 
 FactoryGirl.define do
@@ -29,6 +30,11 @@ FactoryGirl.define do
     name { Faker::Name.name }
     email { Faker::Internet.email }
     password "12345678"
+
+    after :create do |user|
+      user.avatar = Avatarly.generate_avatar(user.email, opts={})
+      user.save!
+    end
 
     trait :admin do
       role 'admin'
