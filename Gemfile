@@ -61,6 +61,15 @@ gem 'high_voltage', '~> 3.0.0'
 # nested layout, allow to smaller layout rather than only applicatin layout
 gem 'nestive'
 
+# background job
+# gem 'devise-async'
+
+# use this gem if we use Mailchimp API
+# gem 'gibbon'
+
+# payment gateway
+#gem 'stripe'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
