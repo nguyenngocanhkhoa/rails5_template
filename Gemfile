@@ -58,6 +58,9 @@ gem 'slim-rails'
 # to generate static pages like About page, Policy page
 gem 'high_voltage', '~> 3.0.0'
 
+# nested layout, allow to smaller layout rather than only applicatin layout
+gem 'nestive'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
