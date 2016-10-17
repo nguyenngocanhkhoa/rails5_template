@@ -58,9 +58,6 @@ gem 'slim-rails'
 # to generate static pages like About page, Policy page
 gem 'high_voltage', '~> 3.0.0'
 
-gem 'unicorn'
-gem 'unicorn-rails'
-
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
@@ -76,6 +73,7 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
+  gem 'guard-puma'
   gem 'letter_opener'
   gem 'rack-mini-profiler', :require=>false
   gem 'rails_layout'
