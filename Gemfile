@@ -33,7 +33,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 gem 'chronic'
 gem 'devise'
-gem 'draper'
+gem 'draper', '~> 3.0.0.pre1'
 gem 'figaro'
 gem 'font-awesome-rails'
 gem 'kaminari'
