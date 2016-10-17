@@ -36,17 +36,33 @@ gem 'devise'
 gem 'draper', '~> 3.0.0.pre1'
 gem 'figaro'
 gem 'font-awesome-rails'
+
+# pagination tool
 gem 'kaminari'
+# handle javascript datetime
 gem 'momentjs-rails'
+# app monitoring
 gem 'newrelic_rpm'
+# database gem
 gem 'pg'
+# rollbase
 gem 'pundit'
+# frontend javascript bugs tracker
 gem 'rollbar'
+# bakend exception listener
 gem 'sentry-raven'
+# generate bootstrap easily
 gem 'simple_form'
+# use slim rather than default erb
 gem 'slim-rails'
+# to generate static pages like About page, Policy page
+gem 'high_voltage', '~> 3.0.0'
+
 gem 'unicorn'
 gem 'unicorn-rails'
+
+
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
