@@ -16,9 +16,18 @@ Things you may want to cover:
 
 * Database creation
 
+    bundle exec rake db:create DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+    bundle exec rake db:migrate
+
 * Database initialization
+    bundle exec rake db:seed
+
+* Database reset
+    bundle exec rake db:reset DISABLE_DATABASE_ENVIRONMENT_CHECK=1
 
 * How to run the test suite
+
+    guard
 
 * Services (job queues, cache servers, search engines, etc.)
 
