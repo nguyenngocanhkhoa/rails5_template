@@ -26,9 +26,9 @@
 FactoryGirl.define do
   factory :user do
     confirmed_at Time.now
-    name "Test User"
-    email "test@example.com"
-    password "please123"
+    name { Faker::Name.name }
+    email { Faker::Internet.email }
+    password "12345678"
 
     trait :admin do
       role 'admin'
