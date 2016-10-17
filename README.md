@@ -1,5 +1,5 @@
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
+[![Code Climate](https://codeclimate.com/github/GoldenOwlAsia/rails5_template/badges/gpa.svg)](https://codeclimate.com/github/GoldenOwlAsia/rails5_template)
 # README
 
 This README would normally document whatever steps are necessary to get the
