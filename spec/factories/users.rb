@@ -33,6 +33,11 @@ FactoryGirl.define do
     password_confirmation "12345678"
     avatar { Faker::Avatar.image }
 
+    after :create do |user|
+      user.avatar = Avatarly.generate_avatar(user.email, opts={})
+      user.save!
+    end
+
     trait :admin do
       role 'admin'
     end
