@@ -99,6 +99,10 @@ gem 'mail_form'
 # read more: http://neethack.com/2015/06/rails-abstraction-showcase/
 gem 'light-service'
 
+# if we need to schedule cronjob
+# gem 'whenever', :require => false
+
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
