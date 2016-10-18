@@ -60,7 +60,10 @@ gem 'cloudinary'
 # full-text seach, only if we use PG, more powerful, please use ElasticSearch https://github.com/elastic/elasticsearch-rails
 # gem 'pg_search'
 # gem 'searchkick'
+# better than default rails Enum, avoid enum collision
 gem 'enumerize'
+# count has_many, i.e. user has X post count, supports conditional counter
+gem 'counter_culture', '~> 0.1.33'
 
 ## VIEWS
 # nested layout, allow to smaller layout rather than only applicatin layout
