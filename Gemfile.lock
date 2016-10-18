@@ -108,6 +108,8 @@ GEM
       activemodel (>= 3.0)
       activesupport (>= 3.0)
       request_store (~> 1.0)
+    enumerize (1.1.1)
+      activesupport (>= 3.2)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -422,6 +424,7 @@ DEPENDENCIES
   database_cleaner
   devise
   draper
+  enumerize
   factory_girl_rails
   faker
   figaro
