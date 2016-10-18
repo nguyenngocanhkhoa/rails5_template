@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require turbolinks
 //= require nprogress
 //= require nprogress-turbolinks
@@ -19,4 +20,13 @@
 //= require cocoon
 //= require highcharts
 //= require chartkick
-//= require_tree .
+//= require select2
+//= require moment
+//= require bootstrap-datetimepicker
+//= require_self
+
+$(function() {
+  $( ".select2" ).select2({
+    theme: "bootstrap"
+  });
+});

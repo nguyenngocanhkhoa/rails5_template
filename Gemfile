@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
@@ -34,6 +35,8 @@ gem 'nprogress-rails'
 # generate js chart from server side
 gem "highcharts-rails"
 gem 'chartkick'
+gem "select2-rails"
+gem 'bootstrap3-datetimepicker-rails'
 
 ### MVC EXTENSIONS
 ## COMMON
@@ -47,6 +50,8 @@ gem 'draper'
 gem 'sucker_punch'
 # contact form, I guess every product we do will have at least one
 gem 'mail_form'
+# handle money calculation
+gem 'money-rails'
 
 ## MODELS
 # Use ActiveModel has_secure_password
@@ -89,6 +94,8 @@ gem "cocoon"
 gem 'kaminari'
 # auto generate SEO friendly info
 gem 'meta-tags'
+# process markdown text
+# gem 'redcarpet'
 
 
 ## CONTROLLERS
@@ -113,6 +120,8 @@ gem 'friendly_id', '~> 5.1.0'
 
 # payment gateway
 # gem 'stripe'
+# online exchange rate
+# gem 'eu_central_bank'
 
 # if we need activity feed for users, similar to Facebook activity feed
 # gem 'public_activity'
@@ -159,6 +168,12 @@ group :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'simplecov-json', require: false
+  # specialized in json api testing
+  gem 'airborne'
+  # to be used with Code Climate
+  # gem 'codeclimate-test-reporter'
+  gem 'webmock'
+  gem 'timecop'
 end
 
 ### TOOLS
