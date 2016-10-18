@@ -79,11 +79,15 @@ gem 'sucker_punch'
 # payment gateway
 #gem 'stripe'
 
+# show progressbar while navigate between pages
 gem 'nprogress-rails'
 
 # to generate fake data for demo
 gem 'factory_girl_rails'
 gem 'faker'
+
+# display friendly error page
+gem 'gaffe'
 
 
 group :development do
