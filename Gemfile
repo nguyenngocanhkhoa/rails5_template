@@ -69,7 +69,9 @@ gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 gem "avatarly"
 
 # background job
-# gem 'devise-async'
+# this gem uses concurrent-ruby to create in-memory delay jobs, thus it can be deployed to any environment
+# for more functionalities, we should use Sidekiq instead
+gem 'sucker_punch'
 
 # use this gem if we use Mailchimp API
 # gem 'gibbon'
@@ -82,6 +84,7 @@ gem 'nprogress-rails'
 # to generate fake data for demo
 gem 'factory_girl_rails'
 gem 'faker'
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

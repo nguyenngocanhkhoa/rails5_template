@@ -34,5 +34,8 @@ module Rails4test
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # use sucker punch queue
+    config.active_job.queue_adapter = :sucker_punch
   end
 end
