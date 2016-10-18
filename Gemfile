@@ -54,6 +54,7 @@ gem 'rollbar'
 gem 'sentry-raven'
 # generate bootstrap easily
 gem 'simple_form'
+gem 'simple_form-bootstrap'
 # use slim rather than default erb
 gem 'slim-rails'
 # to generate static pages like About page, Policy page
@@ -88,6 +89,9 @@ gem 'faker'
 
 # display friendly error page
 gem 'gaffe'
+
+# contact form, I guess every product we do will have at least one
+gem 'mail_form'
 
 
 group :development do

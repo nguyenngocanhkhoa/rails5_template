@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require nprogress
 //= require nprogress-turbolinks
+//= require simple_form-bootstrap
 //= require_tree .
