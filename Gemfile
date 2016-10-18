@@ -55,6 +55,10 @@ gem 'sentry-raven'
 # generate bootstrap easily
 gem 'simple_form'
 gem 'simple_form-bootstrap'
+# to build nested form for has_many relationship
+# https://github.com/nathanvda/cocoon
+gem "cocoon"
+
 # use slim rather than default erb
 gem 'slim-rails'
 # to generate static pages like About page, Policy page
