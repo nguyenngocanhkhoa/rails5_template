@@ -31,8 +31,9 @@ gem 'font-awesome-rails'
 gem 'momentjs-rails'
 # show progressbar while navigate between pages
 gem 'nprogress-rails'
-
-
+# generate js chart from server side
+gem "highcharts-rails"
+gem 'chartkick'
 
 ### MVC EXTENSIONS
 ## COMMON
@@ -64,6 +65,14 @@ gem 'cloudinary'
 gem 'enumerize'
 # count has_many, i.e. user has X post count, supports conditional counter
 gem 'counter_culture', '~> 0.1.33'
+# handle state transition in model: pending->active->inactive
+gem 'aasm'
+# for tagging: blog post with tags: technology, rails, etc.
+# gem 'acts-as-taggable-on', '~> 4.0'
+# querying easier
+gem 'groupdate'
+gem 'hightop'
+
 
 ## VIEWS
 # nested layout, allow to smaller layout rather than only applicatin layout
@@ -104,6 +113,9 @@ gem 'friendly_id', '~> 5.1.0'
 
 # payment gateway
 # gem 'stripe'
+
+# if we need activity feed for users, similar to Facebook activity feed
+# gem 'public_activity'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

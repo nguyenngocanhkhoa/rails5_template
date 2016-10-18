@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (4.11.1)
     actionmailer (4.2.5)
       actionpack (= 4.2.5)
       actionview (= 4.2.5)
@@ -78,6 +79,7 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    chartkick (2.1.1)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
@@ -140,6 +142,8 @@ GEM
       rails (>= 4.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    groupdate (3.0.2)
+      activesupport (>= 3)
     guard (2.14.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -169,6 +173,10 @@ GEM
       guard-compat (~> 1.1)
       spring
     high_voltage (3.0.0)
+    highcharts-rails (4.2.5)
+      railties (>= 3.1)
+    hightop (0.1.4)
+      activerecord
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.7.0)
@@ -417,6 +425,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm
   annotate
   avatarly
   better_errors
@@ -426,6 +435,7 @@ DEPENDENCIES
   byebug
   capybara
   carrierwave (>= 1.0.0.beta, < 2.0)
+  chartkick
   chronic
   cloudinary
   cocoon
@@ -441,12 +451,15 @@ DEPENDENCIES
   font-awesome-rails
   friendly_id (~> 5.1.0)
   gaffe
+  groupdate
   guard-bundler
   guard-puma
   guard-rails
   guard-rspec
   guard-spring
   high_voltage (~> 3.0.0)
+  highcharts-rails
+  hightop
   jbuilder (~> 2.0)
   jquery-rails
   kaminari

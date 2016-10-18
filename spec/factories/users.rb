@@ -33,6 +33,7 @@ FactoryGirl.define do
     end
     password "12345678"
     password_confirmation "12345678"
+    created_at { Faker::Date.between_except(1.year.ago, 1.year.from_now, Date.today) }
 
     after :create do |user|
       blob = Avatarly.generate_avatar(user.email, size: 150)
