@@ -35,7 +35,7 @@ FactoryGirl.define do
     password_confirmation "12345678"
 
     after :create do |user|
-      blob = Avatarly.generate_avatar(user.email, opts={})
+      blob = Avatarly.generate_avatar(user.email, size: 150)
       path = File.join(Rails.root, '/tmp/avatar.png')
       File.open(path, 'wb') do |f|
         f.write blob
