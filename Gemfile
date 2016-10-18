@@ -79,6 +79,10 @@ gem "avatarly"
 
 gem 'nprogress-rails'
 
+# to generate fake data for demo
+gem 'factory_girl_rails'
+gem 'faker'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
@@ -99,8 +103,6 @@ group :development do
   gem 'rb-inotify', :require=>false
 end
 group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'faker'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'pry-rails'
