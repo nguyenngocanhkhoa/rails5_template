@@ -134,6 +134,8 @@ GEM
     font-awesome-rails (4.6.3.1)
       railties (>= 3.2, < 5.1)
     formatador (0.2.5)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     gaffe (1.2.0)
       rails (>= 4.0.0)
     globalid (0.3.7)
@@ -437,6 +439,7 @@ DEPENDENCIES
   faker
   figaro
   font-awesome-rails
+  friendly_id (~> 5.1.0)
   gaffe
   guard-bundler
   guard-puma

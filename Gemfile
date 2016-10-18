@@ -92,6 +92,8 @@ gem 'high_voltage', '~> 3.0.0'
 gem 'light-service'
 # display friendly error page
 gem 'gaffe'
+# support query by slug: /blogs/my-post-title
+gem 'friendly_id', '~> 5.1.0'
 # quick and dirty way to generate API: https://github.com/ruby-grape/grape
 # gem 'grape'
 # quick and dirty way to generate Admin panel: https://github.com/ruby-grape/grape
