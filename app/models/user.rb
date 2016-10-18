@@ -21,6 +21,7 @@
 #  confirmation_sent_at   :datetime
 #  unconfirmed_email      :string
 #  role                   :integer
+#  avatar                 :string
 #
 
 class User < ActiveRecord::Base
@@ -35,4 +36,6 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  mount_uploader :avatar, AvatarUploader
 end

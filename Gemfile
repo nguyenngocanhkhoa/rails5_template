@@ -61,6 +61,12 @@ gem 'high_voltage', '~> 3.0.0'
 # nested layout, allow to smaller layout rather than only applicatin layout
 gem 'nestive'
 
+# image uploader, can use to upload file to local storage or AWS S3
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+
+# randomly generate avatar
+gem "avatarly"
+
 # background job
 # gem 'devise-async'
 
@@ -74,10 +80,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen'
-  gem 'spring-commands-rspec'
   gem 'annotate'
   gem 'better_errors'
   gem 'binding_of_caller'

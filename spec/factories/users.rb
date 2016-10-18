@@ -21,6 +21,7 @@
 #  confirmation_sent_at   :datetime
 #  unconfirmed_email      :string
 #  role                   :integer
+#  avatar                 :string
 #
 
 FactoryGirl.define do
@@ -29,6 +30,8 @@ FactoryGirl.define do
     name { Faker::Name.name }
     email { Faker::Internet.email }
     password "12345678"
+    password_confirmation "12345678"
+    avatar { Faker::Avatar.image }
 
     trait :admin do
       role 'admin'
