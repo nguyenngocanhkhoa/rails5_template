@@ -20,9 +20,9 @@
 ROLLBAR_ACCESS_TOKEN: b6ee2eb007644e8aa20a41de39233cc9
 NEW_RELIC_LICENSE_KEY: 688e7a71b7ed97443f2064a7ef80501f45ba7d95
 SENTRY_DSN: https://a765b5d3737f4265b20b00d268f26c4f:d50deb14710c4d82ae3efd8a86ec00c9@app.getsentry.com/85449
-GMAIL_USERNAME: Your_Username
-GMAIL_PASSWORD: Your_Password
-DOMAIN_NAME: example.com
-ADMIN_NAME: First User
-ADMIN_EMAIL: user@example.com
-ADMIN_PASSWORD: changeme
+GMAIL_USERNAME: golden.owl.test@gmail.com
+GMAIL_PASSWORD: goldenowl2016
+DOMAIN_NAME: goldenowl.asia
+ADMIN_NAME: Admin
+ADMIN_EMAIL: admin@goldenowl.asia
+ADMIN_PASSWORD: 12345678

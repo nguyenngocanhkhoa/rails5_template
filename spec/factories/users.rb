@@ -28,15 +28,12 @@ FactoryGirl.define do
   factory :user do
     confirmed_at Time.now
     name { Faker::Name.name }
-    email { Faker::Internet.email }
+    sequence :email do |n|
+      "user#{n}@example.com"
+    end
     password "12345678"
     password_confirmation "12345678"
     avatar { Faker::Avatar.image }
-
-    after :create do |user|
-      user.avatar = Avatarly.generate_avatar(user.email, opts={})
-      user.save!
-    end
 
     trait :admin do
       role 'admin'
