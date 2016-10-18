@@ -102,6 +102,8 @@ gem 'light-service'
 # if we need to schedule cronjob
 # gem 'whenever', :require => false
 
+# auto generate SEO friendly info
+gem 'meta-tags'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
