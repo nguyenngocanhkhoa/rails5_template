@@ -33,7 +33,16 @@ FactoryGirl.define do
     end
     password "12345678"
     password_confirmation "12345678"
-    remote_avatar_url { Faker::Avatar.image }
+
+    after :create do |user|
+      blob = Avatarly.generate_avatar(user.email, opts={})
+      path = File.join(Rails.root, '/tmp/avatar.png')
+      File.open(path, 'wb') do |f|
+        f.write blob
+      end
+      user.remote_avatar_url = path
+      user.save
+    end
 
     trait :admin do
       role 'admin'
