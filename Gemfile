@@ -93,6 +93,9 @@ gem 'gaffe'
 # contact form, I guess every product we do will have at least one
 gem 'mail_form'
 
+# thin controller in Rails, move logic to service class
+# read more: http://neethack.com/2015/06/rails-abstraction-showcase/
+gem 'light-service'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
