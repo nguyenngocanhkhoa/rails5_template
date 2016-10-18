@@ -33,7 +33,7 @@ FactoryGirl.define do
     end
     password "12345678"
     password_confirmation "12345678"
-    avatar { Faker::Avatar.image }
+    remote_avatar_url { Faker::Avatar.image }
 
     trait :admin do
       role 'admin'

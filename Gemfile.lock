@@ -48,6 +48,7 @@ GEM
       rfc822
       rmagick
       unicode_utils
+    aws_cf_signer (0.1.3)
     bcrypt (3.1.11)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -77,6 +78,9 @@ GEM
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
+    cloudinary (1.2.3)
+      aws_cf_signer
+      rest-client
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -96,6 +100,8 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
+    domain_name (0.5.20160826)
+      unf (>= 0.0.5, < 1.0.0)
     draper (2.1.0)
       actionpack (>= 3.0)
       activemodel (>= 3.0)
@@ -151,6 +157,8 @@ GEM
       guard-compat (~> 1.1)
       spring
     high_voltage (3.0.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     i18n (0.7.0)
     interception (0.5)
     jbuilder (2.6.0)
@@ -195,6 +203,7 @@ GEM
     nenv (0.3.0)
     nestive (0.6.0)
       rails (>= 3.0.0)
+    netrc (0.11.0)
     newrelic_rpm (3.16.3.323)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
@@ -266,6 +275,10 @@ GEM
     request_store (1.3.1)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
+    rest-client (2.0.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rfc822 (0.1.5)
     rmagick (2.16.0)
     rollbar (2.13.3)
@@ -370,16 +383,18 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
     unicode-display_width (1.1.1)
     unicode_utils (1.4.0)
     uniform_notifier (1.10.0)
     warden (1.2.6)
       rack (>= 1.0)
-    web-console (2.3.0)
-      activemodel (>= 4.0)
-      binding_of_caller (>= 0.7.2)
-      railties (>= 4.0)
-      sprockets-rails (>= 2.0, < 4.0)
+    web-console (3.3.0)
+      activemodel (>= 4.2)
+      debug_inspector
+      railties (>= 4.2)
     websocket (1.2.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -398,6 +413,7 @@ DEPENDENCIES
   capybara
   carrierwave (>= 1.0.0.beta, < 2.0)
   chronic
+  cloudinary
   coffee-rails (~> 4.2)
   database_cleaner
   devise

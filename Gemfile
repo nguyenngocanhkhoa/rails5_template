@@ -65,6 +65,8 @@ gem 'nestive'
 
 # image uploader, can use to upload file to local storage or AWS S3
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+# handle image storing
+gem 'cloudinary'
 
 # randomly generate avatar
 gem "avatarly"

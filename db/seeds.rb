@@ -5,7 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-user = CreateAdminService.new.call
+require 'factory_girl_rails'
+require 'faker'
+I18n.reload!
+
+FG = FactoryGirl
+
+user = FG.create :user, admin: true, password: Rails.application.secrets.admin_password, password_confirmation: Rails.application.secrets.admin_password
+user.confirm
 puts 'CREATED ADMIN USER: ' << user.email
 # Environment variables (ENV['...']) can be set in the file config/application.yml.
 # See http://railsapps.github.io/rails-environment-variables.html

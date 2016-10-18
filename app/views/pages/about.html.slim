@@ -1,5 +1,5 @@
-- if User.last.present?
-  = image_tag User.last.avatar&.url
+- if User.admin.present?
+  = image_tag User.admin&.avatar&.url
 
 blockquote
   p Hi there! I’m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin’ caught in the rain.)
