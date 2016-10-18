@@ -95,12 +95,16 @@ group :development do
   gem 'guard-rails'
   gem 'guard-rspec'
   gem 'guard-puma'
+  gem 'guard-spring'
   gem 'letter_opener'
-  gem 'rack-mini-profiler', :require=>false
+  gem 'rack-mini-profiler', require: false
   gem 'rails_layout'
-  gem 'rb-fchange', :require=>false
-  gem 'rb-fsevent', :require=>false
-  gem 'rb-inotify', :require=>false
+  gem 'rb-fchange', require: false
+  gem 'rb-fsevent', require: false
+  gem 'rb-inotify', require: false
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-rubocop'
 end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -119,6 +123,6 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
-  gem 'simplecov', :require=>false
-  gem 'simplecov-json', :require=>false
+  gem 'simplecov', require: false
+  gem 'simplecov-json', require: false
 end

@@ -85,3 +85,10 @@ guard 'puma' do
   watch('Gemfile.lock')
   watch(%r{^config|lib|api/.*})
 end
+
+guard 'spring', bundler: true do
+  watch('Gemfile.lock')
+  watch(%r{^config/})
+  watch(%r{^spec/(support|factories)/})
+  watch(%r{^spec/factory.rb})
+end
