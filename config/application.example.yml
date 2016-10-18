@@ -26,3 +26,4 @@ DOMAIN_NAME: goldenowl.asia
 ADMIN_NAME: Admin
 ADMIN_EMAIL: admin@goldenowl.asia
 ADMIN_PASSWORD: 12345678
+BLAZER_DATABASE_URL: postgres://user:password@hostname:5432/database

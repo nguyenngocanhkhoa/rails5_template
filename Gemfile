@@ -178,3 +178,8 @@ gem 'sentry-raven'
 # to generate fake data for demo
 gem 'factory_girl_rails'
 gem 'faker'
+# manage data in DB with GUI, similar to PHPAdmin
+# should not run this for long on production
+gem 'blazer'
+# DB GUID
+gem 'rails_db'

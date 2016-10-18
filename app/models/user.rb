@@ -46,4 +46,8 @@ class User < ActiveRecord::Base
   def self.admin
     where(admin: true).first
   end
+
+  def admin?
+    admin
+  end
 end
