@@ -168,6 +168,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'simplecov-json', require: false
+  gem 'coveralls', require: false
   # specialized in json api testing
   gem 'airborne'
   # to be used with Code Climate
