@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   mount RailsDb::Engine => '/db', :as => 'db'
   root 'home#index'
+  get '/import', to: 'home#import'
+  post 'export_data', to: 'home#export_data'
 end

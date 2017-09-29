@@ -199,3 +199,5 @@ gem 'faker'
 gem 'blazer'
 # DB GUID
 gem 'rails_db'
+gem 'bootstrap_form'
+gem "roo", "~> 2.7.0"
