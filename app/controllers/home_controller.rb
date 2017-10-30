@@ -168,11 +168,11 @@ class HomeController < ApplicationController
 
   def write_processed_msss_file (filename, isUnmatched)
     if isUnmatched
-      path = Rails.root.to_s + "/" + filename[0..-5] + "_processed.csv"
+      path_output = Rails.root.to_s + "/" + filename[0..-5] + "_processed.csv"
     else
-      path = Rails.root.to_s + "/" + filename[0..-5] + "_processed_only_matched_items.csv"
+      path_output = Rails.root.to_s + "/" + filename[0..-5] + "_processed_only_matched_items.csv"
     end
-    File.open(path, "w") do |f|
+    File.open(path_output, "w") do |f|
       f.puts(@@default_cols.join("\t"))
       @begin_time = Time.now
       puts "Begining process file!"
@@ -208,7 +208,6 @@ class HomeController < ApplicationController
             end
             @current+=1
           end
-
           puts "Writing is completed!"
           puts "Total #{@current - 1} row!"
           puts "Processed #{@process_count_row} row!"
@@ -264,7 +263,9 @@ class HomeController < ApplicationController
             row["item_key_old"] = [row["Org Item ID"], row["Client Vendor"], row["Client VenCatNum"]].join("|")
             row["ProductGroupID"].blank? && row["ProductGroupID"] = -1
             row["Attribute Enhancement Count"].blank? && row["Attribute Enhancement Count"] = -1
-            unless ['FULLY-NORMALIZED', 'PARTIALLY-NORMALIZED', 'AUTO-NORMALIZED'].include? row['Item Status']
+            if row['Item Status'].to_s == '1'
+              row['Item Status'] = 'FULLY-NORMALIZED'
+            elsif !['FULLY-NORMALIZED', 'PARTIALLY-NORMALIZED', 'AUTO-NORMALIZED'].include? row['Item Status']
               flash[:error] = "row [#{i.to_s}] error item status"
               redirect_to :import and return
             end
